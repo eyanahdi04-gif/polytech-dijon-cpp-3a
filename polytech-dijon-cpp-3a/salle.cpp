@@ -5,6 +5,7 @@
 
 Salle::Salle(const std::string& nom):nom_(nom)
 { }
+Salle::Salle(const Salle& other){}
 
 const std::string Salle::getNom() const
 {

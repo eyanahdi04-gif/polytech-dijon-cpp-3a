@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="artist.cpp" />
+    <ClCompile Include="exposition.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="musee.cpp" />
     <ClCompile Include="Oeuvre.cpp" />
     <ClCompile Include="salle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="artist.h" />
+    <ClInclude Include="exposition.h" />
+    <ClInclude Include="musee.h" />
     <ClInclude Include="Oeuvre.h" />
     <ClInclude Include="salle.h" />
   </ItemGroup>

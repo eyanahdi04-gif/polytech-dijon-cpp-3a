@@ -2,6 +2,7 @@
 #include "artist.h"
 #include "oeuvre.h"
 #include "salle.h"
+#include "exposition.h"
 #include <vector>
 
 int main()
@@ -15,5 +16,8 @@ int main()
 	std::vector<Oeuvre*> collection ={&monalis };
 	Salle salle("grand salle");
 	std::cout << salle << std::endl;
+	Exposition xpo("art classique", "20/06/2026", "20/07/2026");
+	xpo.ajouterSalle(&salle);
+	std::cout << xpo << std::endl;
 	return 0;
 };

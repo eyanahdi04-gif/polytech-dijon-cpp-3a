@@ -2,10 +2,18 @@
 Oeuvre::Oeuvre(const std::string& id, const std::string& nom, const std::string& description, bool statut, const  std::string& type, double prix,Artist* artist=nullptr) :
 	id_(id), nom_(nom), description_(description), statut_(statut), type_(type), prix_(prix),artist_(artist) {}
 
+
+
+Oeuvre::Oeuvre(const Oeuvre& other){}
+
+
+
 const std::string& Oeuvre::getId() const
 {
 	return id_;
 }
+
+
 const std::string& Oeuvre::getNom() const
 {
 	return nom_;
@@ -52,4 +60,5 @@ std::ostream& operator << (std::ostream& os, const Oeuvre& oeuvre)
 	return os;
 
  }
+
 
