@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="artist.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Oeuvre.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="artist.h" />
+    <ClInclude Include="Oeuvre.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

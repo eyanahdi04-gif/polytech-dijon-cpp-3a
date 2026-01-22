@@ -1,13 +1,13 @@
 #include "artist.h"
 
 
-Artist::Artist(const std::string& nom, const	std::string& prenom, std::vector<std::string> specialites):nom_(nom),prenom_(prenom),specialites_(specialites){}
+Artist::Artist(const std::string& nom, const std::string& prenom, std::vector<std::string> specialites):nom_(nom),prenom_(prenom),specialites_(specialites){}
 
-std::string Artist::getNom() const
+const std::string& Artist::getNom() const
 {
 	return nom_;
 }
-std::string Artist::getPrenom() const
+const std::string& Artist::getPrenom() const
 {
 	return prenom_;
 }
@@ -28,6 +28,6 @@ std::ostream& operator << (std::ostream& os, const Artist & artist)
 		ch += specialite + " / ";
 	}
 	os << "nom artist :" << artist.getNom() << "    //prenom artist :" << artist.getPrenom();
-		os<< "     //specialites {" << ch << "}/n";
+		os<< "     //specialites { " << ch << "}/n";
 	return os;
  }
