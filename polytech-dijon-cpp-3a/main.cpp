@@ -27,6 +27,6 @@ int main()
 	musedijon.chercherOeuvre("nature");
 
 
-	std::cout << loeuvre<<std::endl;
+	std::cout << musedijon<<std::endl;
 	return 0;
 };
