@@ -14,7 +14,7 @@ public:
 	Musee(const std::string& nom,const std::string& location);
 	Musee(const Musee& other);
 	~Musee();
-	const std::string& getnom() const;
+	const std::string& getNom() const;
 	const std::string& getLocation() const;
 	std::vector<Oeuvre*> getOeuvre() const;
 	std::vector<Exposition*> getExposition() const;
@@ -22,5 +22,6 @@ public:
 	void ajoutOeuvre(Oeuvre* oeuvre);
 	Oeuvre* chercherOeuvre(std::string nom);
 	void retirerOeuvre(Oeuvre* oeuvre);
+	friend std::ostream& operator <<(std::ostream& os, const Musee& musee);
 
 };

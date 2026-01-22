@@ -3,6 +3,7 @@
 #include "oeuvre.h"
 #include "salle.h"
 #include "exposition.h"
+#include "musee.h"
 #include <vector>
 
 int main()
@@ -19,5 +20,8 @@ int main()
 	Exposition xpo("art classique", "20/06/2026", "20/07/2026");
 	xpo.ajouterSalle(&salle);
 	std::cout << xpo << std::endl;
+
+	Musee loeuvre("loeuvre", "paris xxxxx");
+	std::cout << loeuvre<<std::endl;
 	return 0;
 };

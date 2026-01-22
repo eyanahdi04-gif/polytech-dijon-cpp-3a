@@ -2,7 +2,7 @@
 Musee::Musee(const std::string& nom, const std::string& location):nom_(nom),location_(location){}
 Musee::Musee(const Musee& other){}
 
-const std::string& Musee::getnom() const
+const std::string& Musee::getNom() const
 {
 	return nom_;
 }
@@ -37,3 +37,8 @@ void Musee::retirerOeuvre(Oeuvre* oeuvre)
 	oeuvres_.erase(std::remove(oeuvres_.begin(), oeuvres_.end(), oeuvre),oeuvres_.end());
 }
 
+std::ostream& operator <<(std::ostream& os,const Musee& musee)
+{
+	os << "nom musee: " << musee.getNom() << " / locattion: " << musee.getLocation();
+	return os;
+}
