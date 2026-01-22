@@ -23,8 +23,5 @@ public:
 	void donnerArtist(Artist* artist);
 	friend std::ostream& operator << (std::ostream& os, const Oeuvre& oeuvre);
 
-
-
-
 };
 
