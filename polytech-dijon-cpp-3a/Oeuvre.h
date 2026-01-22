@@ -12,7 +12,7 @@ private:
 	std::string type_;
 	double prix_;
 public:
-	Oeuvre(const std::string& id, const std::string& nom,const std::string& description ,bool statut,const  std::string& type, double prix);
+	Oeuvre(const std::string& id, const std::string& nom,const std::string& description ,bool statut,const  std::string& type, double prix, Artist* artist = nullptr);
 	const std::string& getId() const;
 	const std::string& getNom() const;
 	const std::string& getDescription() const;

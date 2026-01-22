@@ -1,6 +1,6 @@
 #include "Oeuvre.h"
-Oeuvre::Oeuvre(const std::string& id, const std::string& nom, const std::string& description, bool statut, const  std::string& type, double prix) :
-	id_(id), nom_(nom), description_(description), statut_(statut), type_(type), prix_(prix) {}
+Oeuvre::Oeuvre(const std::string& id, const std::string& nom, const std::string& description, bool statut, const  std::string& type, double prix,Artist* artist=nullptr) :
+	id_(id), nom_(nom), description_(description), statut_(statut), type_(type), prix_(prix),artist_(artist) {}
 
 const std::string& Oeuvre::getId() const
 {
