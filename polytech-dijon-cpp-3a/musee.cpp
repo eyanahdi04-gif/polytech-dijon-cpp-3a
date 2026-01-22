@@ -37,7 +37,7 @@ void Musee::retirerOeuvre(Oeuvre* oeuvre)
 	oeuvres_.erase(std::remove(oeuvres_.begin(), oeuvres_.end(), oeuvre),oeuvres_.end());
 }
 
-std::ostream& operator <<(std::ostream& os,const Musee& musee)
+std::ostream& operator << (std::ostream& os,const Musee& musee)
 {
 	os << "nom musee: " << musee.getNom() << " / locattion: " << musee.getLocation();
 	return os;

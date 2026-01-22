@@ -11,7 +11,6 @@ private:
 public:
 	Salle(const std::string& nom);
 	Salle(const Salle& other);
-	~Salle();
 	const std::string getNom() const;
 	std::vector<Oeuvre*> getOeuvres() const;
 	void ajouterOeuvre(Oeuvre* oeuvre);

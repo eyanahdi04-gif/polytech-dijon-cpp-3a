@@ -15,7 +15,6 @@ private:
 public:
 	Oeuvre(const std::string& id, const std::string& nom,const std::string& description ,bool statut,const  std::string& type, double prix, Artist* artist = nullptr);
 	Oeuvre(const Oeuvre& other);
-	~Oeuvre();
 	const std::string& getId() const;
 	const std::string& getNom() const;
 	const std::string& getDescription() const;

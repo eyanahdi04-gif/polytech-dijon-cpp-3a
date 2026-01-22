@@ -21,7 +21,12 @@ int main()
 	xpo.ajouterSalle(&salle);
 	std::cout << xpo << std::endl;
 
-	Musee loeuvre("loeuvre", "paris xxxxx");
+	Musee musedijon("loeuvre", "paris xxxxx");
+	musedijon.ajoutOeuvre(&monalis);
+	xpo.retirerSalle(&salle);
+	musedijon.chercherOeuvre("nature");
+
+
 	std::cout << loeuvre<<std::endl;
 	return 0;
 };

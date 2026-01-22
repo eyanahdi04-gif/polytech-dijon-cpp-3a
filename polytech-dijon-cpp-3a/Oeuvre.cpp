@@ -1,5 +1,5 @@
 #include "Oeuvre.h"
-Oeuvre::Oeuvre(const std::string& id, const std::string& nom, const std::string& description, bool statut, const  std::string& type, double prix,Artist* artist=nullptr) :
+Oeuvre::Oeuvre(const std::string& id, const std::string& nom, const std::string& description, bool statut, const  std::string& type, double prix,Artist* artist) :
 	id_(id), nom_(nom), description_(description), statut_(statut), type_(type), prix_(prix),artist_(artist) {}
 
 

@@ -15,7 +15,6 @@ private:
 public:
 	Exposition(const std::string& nom, const  std::string& dateDebut, const std::string& DateFin);
 	Exposition(const Exposition& other);
-	~Exposition();
 	const std::string& getNom() const;
 	const std::string& getDateDebut() const;
 	const std::string& getDateFin()  const;

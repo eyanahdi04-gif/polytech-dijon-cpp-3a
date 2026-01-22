@@ -3,6 +3,7 @@
 #include "exposition.h"
 #include <string>
 #include <vector>
+#include <ostream>
 class Musee
 {
 private:
@@ -13,7 +14,6 @@ private:
 public:
 	Musee(const std::string& nom,const std::string& location);
 	Musee(const Musee& other);
-	~Musee();
 	const std::string& getNom() const;
 	const std::string& getLocation() const;
 	std::vector<Oeuvre*> getOeuvre() const;
