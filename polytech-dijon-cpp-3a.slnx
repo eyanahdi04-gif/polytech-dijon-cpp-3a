@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="polytech-dijon-cpp-3a/polytech-dijon-cpp-3a.vcxproj" />
+</Solution>
